@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanFit Solutions | Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container"><span>CleanFit Solutions</span><span>Draft Website </span></div>
+  </div>
+  <header class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">CleanFit</a>
+      <nav class="nav-links">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <span class="badge">Online booking draft</span>
+      <h1 style="margin-top:0;">Request a cleaning service</h1>
+      <p class="lead">This draft booking page shows how users could request a service type and preferred schedule. It is
+        included as a low-fidelity functional placeholder for later development.</p>
+      <div class="split">
+        <div class="form-panel">
+          <div id="errorBox" class="alert"></div>
+          <form id="queryForm" novalidate>
+            <h3>Service request form</h3>
+            <div class="form-row">
+              <div><label for="name">Business name</label><input id="name" type="text" placeholder="FitZone Geelong"
+                  required></div>
+              <div><label for="contactPerson">Contact person</label><input id="contactPerson" type="text"
+                  placeholder="Alex Smith" required></div>
+            </div>
+            <div class="form-row" style="margin-top:1rem;">
+              <div><label for="email">Email</label><input id="email" type="email" placeholder="manager@example.com"
+                  required></div>
+              <div><label for="phone">Phone</label><input id="phone" type="tel" placeholder="0412345678" maxlength="10"
+                  required></div>
+            </div>
+            <div class="form-row" style="margin-top:1rem;">
+              <div><label for="serviceType">Service type</label><select id="serviceType">
+                  <option>Daily Cleaning</option>
+                  <option>Deep Cleaning</option>
+                  <option>Equipment Care</option>
+                  <option>Emergency Response</option>
+                </select></div>
+              <div><label for="frequency">Preferred frequency</label><select id="frequency">
+                  <option>Daily</option>
+                  <option>Weekly</option>
+                  <option>Fortnightly</option>
+                  <option>Once-off</option>
+                </select></div>
+            </div>
+            <div style="margin-top:1rem;"><label for="message">Notes</label><textarea id="message"
+                placeholder="Tell us about your facility requirements..." required></textarea></div>
+            <div class="btn-row" style="margin-top:1rem;"><button class="btn primary" type="submit">Submit Draft
+                Request</button><a class="btn secondary" href="contact.html">Ask a Question</a></div>
+          </form>
+        </div>
+        <div>
+          <div class="card">
+            <h3>How it works</h3>
+            <ol>
+              <li>Select a service type.</li>
+              <li>Provide your business details.</li>
+              <li>Choose a preferred cleaning frequency.</li>
+              <li>Submit your enquiry for follow-up.</li>
+            </ol>
+          </div>
+          <div class="card" style="margin-top:1rem;">
+            <h3>Draft note</h3>
+            <p>In Part 1, this page focuses on structure, navigation, and content layout rather than full processing or
+              database storage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h4>CleanFit Solutions</h4>
+        <p>A draft gym cleaning business website focused on hygiene services, online enquiry, and easy access to service
+          information.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>123 Fitness Avenue, Geelong VIC</p>
+        <p>Phone: 03 5222 1234</p>
+        <p>Email: hello@cleanfit.example</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 CleanFit Solutions · Draft prototype for SIT774</div>
+  </footer>
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>

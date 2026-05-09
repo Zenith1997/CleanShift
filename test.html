@@ -16,7 +16,9 @@
     <script>
 const name = prompt("What is your name|?");
 const intro = document.querySelector("#intro");
-intro.textContent =`Hello ${name}, Welcome to my page`
+
+
+intro.innerHTML =`Hello <strong> ${name}</strong>, Welcome to my page`
     </script>
 </body>
 </html>
